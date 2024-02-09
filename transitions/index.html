@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=“UTF-8” />
+        <style>
+            .c-button {
+                padding: 10px 20px 10px 20px;
+                background-color: #ffffff;
+                border: 1px solid #bbd4f7;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color .4s, box-shadow .4s;
+            }
+            
+            .c-button:hover {
+                background-color: #deebfc;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            }
+            .c-cuadrado {
+                width: 300px;
+                height: 300px;
+                background-color: red;
+                transition: background-color 3s, transform 2s;
+            }
+            .c-cuadrado:hover {
+                background-color: blueviolet;
+                transform: rotate(180deg);
+            }
+            .l-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                margin: 100px
+            }
+        </style>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="bg-gray">
+        <div>
+            <div class="bg-white l-grid-center">
+                <!--            <div class="c-cuadrado"></div>-->
+                <div class="l-grid">
+                    <input type="text" class="input">
+                    <input type="text" class="input">
+                    <input type="text" class="input">
+                    <input type="text" class="input">
+                    <input type="text" class="input">
+                    <input type="text" class="input">
+                </div>
+                <div>
+                    <input type="checkbox" name="check" id="check" class="checkbox">
+                </div>
+                <div class="drop-animation hidden" id="deployable">
+                    <input type="text" name="nombre" id="nombre" class="input">
+                    <div>
+                        <select class="select input">
+                            <option value="Spain">Espa&ntilde;a</option>
+                            <option value="Germany">Alemania</option>
+                            <option value="Portugal">Portugal</option>
+                        </select>
+                        <input type="text" class="input">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="l-columns l-columns--1 desktop:l-columns--6">
+            <div class="l-columns__area l-columns__area--span-1 desktop:l-columns__area--span-3">a</div>
+            <div class="l-columns__area l-columns__area--span-1 desktop:l-columns__area--span-3">b</div>
+            <div class="l-columns__area l-columns__area--span-1 desktop:l-columns__area--span-2">c</div>
+            <div class="l-columns__area l-columns__area--span-1 desktop:l-columns__area--span-2">d</div>
+            <div class="l-columns__area l-columns__area--span-1 desktop:l-columns__area--span-2">e</div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

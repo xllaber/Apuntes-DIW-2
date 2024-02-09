@@ -1,0 +1,11 @@
+.divVw100 {
+    /*background-color: blue;*/
+    width: 100vmin;
+    height: 100vmin;
+    background-image: url("Hoid_wallpaper_horizontal.jpg");
+    background-size: cover;
+}
+
+/*.imgWidth {*/
+/*    width: 100%;*/
+/*}*/

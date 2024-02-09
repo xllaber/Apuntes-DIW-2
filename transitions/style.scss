@@ -1,0 +1,100 @@
+@import "02_base/normalize",
+"02_base/reset";
+
+$breakpoints: ("phablet": 576, "tablet": 768, "desktop": 992);
+
+.bg-gray {
+  background-color: lightgray;
+  width: 500px;
+  height: 300px;
+}
+.bg-white {
+  background-color: #fff;
+}
+
+.input {
+  height: 20px;
+  margin: 5px;
+  border: 1px solid gray;
+  outline: none;
+  transition: border-color 1s;
+
+}
+
+.input:focus {
+  //background-color: lightblue;
+  //box-shadow: 6px 10px 10px 2px rgba(58, 102, 214, 1);
+  //border-radius: 5px;
+  border-color: green !important;
+}
+
+.input:hover {
+  border-color: black;
+}
+
+.l-grid-center {
+  display: grid;
+  place-content: center;
+}
+
+.checkbox {
+  background-color: black;
+  margin-left: 100px;
+}
+
+.hidden {
+  margin-left: 100px;
+  opacity: 0;
+}
+
+.drop-animation {
+  transition: opacity .3s ease-in;
+}
+
+.l-columns {
+  display: grid;
+  &--1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  &--6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  &__area {
+    text-align: center;
+    border: 1px solid blue;
+    &--span-1 {
+      grid-column: span 1;
+    }
+    &--span-2{
+      grid-column: span 2;
+    }
+    &--span-3 {
+      grid-column: span 3;
+    }
+  }
+}
+
+@each $breakpoint, $size in $breakpoints {
+  $separator: if($breakpoint == "", "", "\\:");
+  @media (min-width: #{$size}px) {
+    .#{$breakpoint}#{$separator}l-columns {
+      &--1 {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      &--6 {
+        grid-template-columns: repeat(6, 1fr);
+      }
+    }
+    .#{$breakpoint}#{$separator}l-columns__area{
+      &--span-1 {
+        grid-column: span 1;
+      }
+      &--span-2{
+        grid-column: span 2;
+      }
+      &--span-3 {
+        grid-column: span 3;
+      }
+    }
+  }
+}

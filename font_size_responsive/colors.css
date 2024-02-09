@@ -1,0 +1,44 @@
+@media (min-width: 576px) {
+  .mobile:g--bg-color-blue {
+    background-color: #0000FF;
+  }
+  .mobile:g--bg-color-green {
+    background-color: #00FF00;
+  }
+  .mobile:g--bg-color-red {
+    background-color: #FF0000;
+  }
+  .mobile:g--bg-color-orange {
+    background-color: #FFA500;
+  }
+}
+@media (min-width: 768px) {
+  .tablet:g--bg-color-blue {
+    background-color: #0000FF;
+  }
+  .tablet:g--bg-color-green {
+    background-color: #00FF00;
+  }
+  .tablet:g--bg-color-red {
+    background-color: #FF0000;
+  }
+  .tablet:g--bg-color-orange {
+    background-color: #FFA500;
+  }
+}
+@media (min-width: 992px) {
+  .desktop:g--bg-color-blue {
+    background-color: #0000FF;
+  }
+  .desktop:g--bg-color-green {
+    background-color: #00FF00;
+  }
+  .desktop:g--bg-color-red {
+    background-color: #FF0000;
+  }
+  .desktop:g--bg-color-orange {
+    background-color: #FFA500;
+  }
+}
+
+/*# sourceMappingURL=colors.css.map */
