@@ -1,0 +1,156 @@
+@media (min-width: 576px) {
+  .tablet:g--bg-color-blue {
+    background-color: #0000FF;
+  }
+  .tablet:g--bg-color-green {
+    background-color: #00FF00;
+  }
+  .tablet:g--bg-color-red {
+    background-color: #FF0000;
+  }
+  .tablet:g--bg-color-orange {
+    background-color: #FFA500;
+  }
+}
+@media (min-width: 768px) {
+  .laptop:g--bg-color-blue {
+    background-color: #0000FF;
+  }
+  .laptop:g--bg-color-green {
+    background-color: #00FF00;
+  }
+  .laptop:g--bg-color-red {
+    background-color: #FF0000;
+  }
+  .laptop:g--bg-color-orange {
+    background-color: #FFA500;
+  }
+}
+@media (min-width: 992px) {
+  .desktop:g--bg-color-blue {
+    background-color: #0000FF;
+  }
+  .desktop:g--bg-color-green {
+    background-color: #00FF00;
+  }
+  .desktop:g--bg-color-red {
+    background-color: #FF0000;
+  }
+  .desktop:g--bg-color-orange {
+    background-color: #FFA500;
+  }
+}
+.l-columns {
+  display: grid;
+  border: 1px solid black;
+  padding: 10px;
+}
+@media (min-width: 576px) {
+  .l-columns--fixed\@tablet {
+    background-color: lightblue;
+    grid-template-columns: 100px 200px 80px 300px;
+  }
+  .l-columns--20vw\@tablet {
+    background-color: lightgreen;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+  }
+  .l-columns--repeat-4\@tablet {
+    background-color: lightcoral;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .l-columns--1fr2fr\@tablet {
+    background-color: lightcyan;
+    grid-template-columns: 1fr 2fr;
+  }
+  .l-columns--repeat-fr-repeat\@tablet {
+    background-color: lightsalmon;
+    grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr);
+  }
+  .l-columns--repeatX2\@tablet {
+    background-color: lightskyblue;
+    grid-template-columns: repeat(2, 2fr) repeat(2, 3fr);
+  }
+  .l-columns--repeat-auto-fit\@tablet {
+    background-color: lightgoldenrodyellow;
+    grid-template-columns: repeat(auto-fit, 100px);
+  }
+  .l-columns--repeat-auto-fit-minmax\@tablet {
+    background-color: lightpink;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
+@media (min-width: 768px) {
+  .l-columns--fixed\@laptop {
+    background-color: lightblue;
+    grid-template-columns: 100px 200px 80px 300px;
+  }
+  .l-columns--20vw\@laptop {
+    background-color: lightgreen;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+  }
+  .l-columns--repeat-4\@laptop {
+    background-color: lightcoral;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .l-columns--1fr2fr\@laptop {
+    background-color: lightcyan;
+    grid-template-columns: 1fr 2fr;
+  }
+  .l-columns--repeat-fr-repeat\@laptop {
+    background-color: lightsalmon;
+    grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr);
+  }
+  .l-columns--repeatX2\@laptop {
+    background-color: lightskyblue;
+    grid-template-columns: repeat(2, 2fr) repeat(2, 3fr);
+  }
+  .l-columns--repeat-auto-fit\@laptop {
+    background-color: lightgoldenrodyellow;
+    grid-template-columns: repeat(auto-fit, 100px);
+  }
+  .l-columns--repeat-auto-fit-minmax\@laptop {
+    background-color: lightpink;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
+@media (min-width: 992px) {
+  .l-columns--fixed\@desktop {
+    background-color: lightblue;
+    grid-template-columns: 100px 200px 80px 300px;
+  }
+  .l-columns--20vw\@desktop {
+    background-color: lightgreen;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+  }
+  .l-columns--repeat-4\@desktop {
+    background-color: lightcoral;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .l-columns--1fr2fr\@desktop {
+    background-color: lightcyan;
+    grid-template-columns: 1fr 2fr;
+  }
+  .l-columns--repeat-fr-repeat\@desktop {
+    background-color: lightsalmon;
+    grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr);
+  }
+  .l-columns--repeatX2\@desktop {
+    background-color: lightskyblue;
+    grid-template-columns: repeat(2, 2fr) repeat(2, 3fr);
+  }
+  .l-columns--repeat-auto-fit\@desktop {
+    background-color: lightgoldenrodyellow;
+    grid-template-columns: repeat(auto-fit, 100px);
+  }
+  .l-columns--repeat-auto-fit-minmax\@desktop {
+    background-color: lightpink;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
+
+.c-item {
+  text-align: center;
+  border: 1px solid black;
+}
+
+/*# sourceMappingURL=grid-area.css.map */

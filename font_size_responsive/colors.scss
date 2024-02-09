@@ -1,4 +1,4 @@
-$breakpoints: ("": 0, "mobile": 576, "tablet": 768, "desktop": 992);
+$breakpoints: ("tablet": 576, "laptop": 768, "desktop": 992);
 $colors: ("blue": #0000FF, "green": #00FF00, "red": #FF0000, "orange": #FFA500);
 
 //@each $breakpoint, $size in $breakpoints {
