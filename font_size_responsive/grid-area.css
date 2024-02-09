@@ -46,103 +46,103 @@
   padding: 10px;
 }
 @media (min-width: 576px) {
-  .l-columns--fixed\@tablet {
+  .l-columns tablet\:.l-columns--fixed {
     background-color: lightblue;
     grid-template-columns: 100px 200px 80px 300px;
   }
-  .l-columns--20vw\@tablet {
+  .l-columns tablet\:.l-columns--20vw {
     background-color: lightgreen;
     grid-template-columns: 20vw 20vw 20vw 20vw;
   }
-  .l-columns--repeat-4\@tablet {
+  .l-columns tablet\:.l-columns--repeat-4 {
     background-color: lightcoral;
     grid-template-columns: repeat(4, 1fr);
   }
-  .l-columns--1fr2fr\@tablet {
+  .l-columns tablet\:.l-columns--1fr2fr {
     background-color: lightcyan;
     grid-template-columns: 1fr 2fr;
   }
-  .l-columns--repeat-fr-repeat\@tablet {
+  .l-columns tablet\:.l-columns--repeat-fr-repeat {
     background-color: lightsalmon;
     grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr);
   }
-  .l-columns--repeatX2\@tablet {
+  .l-columns tablet\:.l-columns--repeatX2 {
     background-color: lightskyblue;
     grid-template-columns: repeat(2, 2fr) repeat(2, 3fr);
   }
-  .l-columns--repeat-auto-fit\@tablet {
+  .l-columns tablet\:.l-columns--repeat-auto-fit {
     background-color: lightgoldenrodyellow;
     grid-template-columns: repeat(auto-fit, 100px);
   }
-  .l-columns--repeat-auto-fit-minmax\@tablet {
+  .l-columns tablet\:.l-columns--repeat-auto-fit-minmax {
     background-color: lightpink;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
 @media (min-width: 768px) {
-  .l-columns--fixed\@laptop {
+  .l-columns laptop\:.l-columns--fixed {
     background-color: lightblue;
     grid-template-columns: 100px 200px 80px 300px;
   }
-  .l-columns--20vw\@laptop {
+  .l-columns laptop\:.l-columns--20vw {
     background-color: lightgreen;
     grid-template-columns: 20vw 20vw 20vw 20vw;
   }
-  .l-columns--repeat-4\@laptop {
+  .l-columns laptop\:.l-columns--repeat-4 {
     background-color: lightcoral;
     grid-template-columns: repeat(4, 1fr);
   }
-  .l-columns--1fr2fr\@laptop {
+  .l-columns laptop\:.l-columns--1fr2fr {
     background-color: lightcyan;
     grid-template-columns: 1fr 2fr;
   }
-  .l-columns--repeat-fr-repeat\@laptop {
+  .l-columns laptop\:.l-columns--repeat-fr-repeat {
     background-color: lightsalmon;
     grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr);
   }
-  .l-columns--repeatX2\@laptop {
+  .l-columns laptop\:.l-columns--repeatX2 {
     background-color: lightskyblue;
     grid-template-columns: repeat(2, 2fr) repeat(2, 3fr);
   }
-  .l-columns--repeat-auto-fit\@laptop {
+  .l-columns laptop\:.l-columns--repeat-auto-fit {
     background-color: lightgoldenrodyellow;
     grid-template-columns: repeat(auto-fit, 100px);
   }
-  .l-columns--repeat-auto-fit-minmax\@laptop {
+  .l-columns laptop\:.l-columns--repeat-auto-fit-minmax {
     background-color: lightpink;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
 @media (min-width: 992px) {
-  .l-columns--fixed\@desktop {
+  .l-columns desktop\:.l-columns--fixed {
     background-color: lightblue;
     grid-template-columns: 100px 200px 80px 300px;
   }
-  .l-columns--20vw\@desktop {
+  .l-columns desktop\:.l-columns--20vw {
     background-color: lightgreen;
     grid-template-columns: 20vw 20vw 20vw 20vw;
   }
-  .l-columns--repeat-4\@desktop {
+  .l-columns desktop\:.l-columns--repeat-4 {
     background-color: lightcoral;
     grid-template-columns: repeat(4, 1fr);
   }
-  .l-columns--1fr2fr\@desktop {
+  .l-columns desktop\:.l-columns--1fr2fr {
     background-color: lightcyan;
     grid-template-columns: 1fr 2fr;
   }
-  .l-columns--repeat-fr-repeat\@desktop {
+  .l-columns desktop\:.l-columns--repeat-fr-repeat {
     background-color: lightsalmon;
     grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr);
   }
-  .l-columns--repeatX2\@desktop {
+  .l-columns desktop\:.l-columns--repeatX2 {
     background-color: lightskyblue;
     grid-template-columns: repeat(2, 2fr) repeat(2, 3fr);
   }
-  .l-columns--repeat-auto-fit\@desktop {
+  .l-columns desktop\:.l-columns--repeat-auto-fit {
     background-color: lightgoldenrodyellow;
     grid-template-columns: repeat(auto-fit, 100px);
   }
-  .l-columns--repeat-auto-fit-minmax\@desktop {
+  .l-columns desktop\:.l-columns--repeat-auto-fit-minmax {
     background-color: lightpink;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }

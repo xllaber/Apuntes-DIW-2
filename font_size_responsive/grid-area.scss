@@ -6,35 +6,35 @@
   padding: 10px;
   @each $breakpoint, $size in $breakpoints {
     @media (min-width: #{$size}px) {
-      &--fixed\@#{$breakpoint} {
+      #{$breakpoint}\:#{&}--fixed {
         background-color: lightblue;
         grid-template-columns: 100px 200px 80px 300px;
       }
-      &--20vw\@#{$breakpoint} {
+      #{$breakpoint}\:#{&}--20vw {
         background-color: lightgreen;
         grid-template-columns: 20vw 20vw 20vw 20vw;
       }
-      &--repeat-4\@#{$breakpoint} {
+      #{$breakpoint}\:#{&}--repeat-4 {
         background-color: lightcoral;
         grid-template-columns: repeat(4, 1fr);
       }
-      &--1fr2fr\@#{$breakpoint} {
+      #{$breakpoint}\:#{&}--1fr2fr {
         background-color: lightcyan;
         grid-template-columns: 1fr 2fr;
       }
-      &--repeat-fr-repeat\@#{$breakpoint} {
+      #{$breakpoint}\:#{&}--repeat-fr-repeat {
         background-color: lightsalmon;
         grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr);
       }
-      &--repeatX2\@#{$breakpoint} {
+      #{$breakpoint}\:#{&}--repeatX2 {
         background-color: lightskyblue;
         grid-template-columns: repeat(2, 2fr) repeat(2, 3fr);
       }
-      &--repeat-auto-fit\@#{$breakpoint} {
+      #{$breakpoint}\:#{&}--repeat-auto-fit {
         background-color: lightgoldenrodyellow;
         grid-template-columns: repeat(auto-fit, 100px);
       }
-      &--repeat-auto-fit-minmax\@#{$breakpoint} {
+      #{$breakpoint}\:#{&}--repeat-auto-fit-minmax {
         background-color: lightpink;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
       }
