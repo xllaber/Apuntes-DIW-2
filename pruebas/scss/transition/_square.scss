@@ -1,0 +1,11 @@
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #00FF00;
+  transition: translate 2s .4s, background-color 2s .4s;
+}
+
+.square:hover {
+  translate: 100px;
+  background-color: #FF0000;
+}

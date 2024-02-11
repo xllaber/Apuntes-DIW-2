@@ -1,0 +1,57 @@
+$breakpoints: ("phablet": 576px, "tablet": 768px, "desktop": 992px);
+
+.l-grid-area {
+  display: grid;
+  grid-template-areas:
+    "a b c"
+  ;
+
+  &--abc-vertical {
+    grid-template-areas: "a" "b" "c";
+  }
+  &--cba-vertical {
+    grid-template-areas: "c" "b" "a";
+  }
+  &--acb-vertical {
+    grid-template-areas: "a" "c" "b";
+  }
+  &--bac-vertical {
+      grid-template-areas: "b" "a" "c";
+  }
+  &--bca-vertical {
+      grid-template-areas: "b" "c" "a" ;
+  }
+
+  @each $breakpoint, $value in $breakpoints {
+    @media (min-width: #{$value}) {
+      &--abc-vertical\@#{$breakpoint} {
+        grid-template-areas: "a" "b" "c";
+      }
+      &--cba-vertical\@#{$breakpoint} {
+        grid-template-areas: "c" "b" "a";
+      }
+      &--acb-vertical\@#{$breakpoint} {
+        grid-template-areas: "a" "c" "b";
+      }
+      &--bac-vertical\@#{$breakpoint} {
+        grid-template-areas: "b" "a" "c";
+      }
+      &--bca-vertical\@#{$breakpoint} {
+        grid-template-areas: "b" "c" "a" ;
+      }
+    }
+  }
+
+  &__a {
+    grid-area: a;
+    border: 1px black solid;
+  }
+  &__b {
+    grid-area: b;
+    border: 1px black solid;
+  }
+  &__c {
+    grid-area: c;
+    border: 1px black solid;
+  }
+}
